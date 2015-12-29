@@ -73,10 +73,10 @@ void loop() {
           client.print("temp A ");
           client.print(temp_string_a);
           mytest.DataConv (mytest.lettCycle(SENSOR_B), temp_string_b);
-          client.print("temp B ");
+          client.print(" temp B ");
           client.print(temp_string_b);
           mytest.DataConv (mytest.lettCycle(SENSOR_C), temp_string_c);
-          client.print("temp C ");
+          client.print(" temp C ");
           client.print(temp_string_c);
           client.println("<br />");
           client.println("</html>");
