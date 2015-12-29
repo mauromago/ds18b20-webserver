@@ -6,7 +6,7 @@ legge tre sensori di temperatura ds18b20
 */
 #include <SPI.h>
 #include <UIPEthernet.h>
-#include <PRIMALIB.h>
+#include <DS18B20MED.h>
 
 #define SENSOR_A  9 
 #define SENSOR_B  8 
@@ -29,7 +29,7 @@ long shortDelay = 100;
 int lettTodo = 10;
 
 EthernetServer server(80);
-PRIMALIB mytest (shortDelay, shortLoop, lettTodo);
+DS18B20MED mytest (shortDelay, shortLoop, lettTodo);
 
 void setup() {
   // Set up the data pins for communication with DS18B20 sensors
