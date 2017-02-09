@@ -22,8 +22,6 @@ IPAddress DNS(8, 8, 8, 8);
 char temp_string_a[7];
 char temp_string_b[7];
 char temp_string_c[7];
-//long delayTime = 6000;
-//int  delayTimes = 100;
 long shortLoop = 100;
 long shortDelay = 100;
 int lettTodo = 10;
