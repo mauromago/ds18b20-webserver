@@ -4,7 +4,7 @@ programma di log in caldaia
 legge tre sensori di temperatura ds18b20
 ===========================================
 */
-#include <SPI.h>
+//#include <SPI.h>
 #include <UIPEthernet.h>
 #include <DS18B20MED.h>
 
@@ -22,12 +22,12 @@ IPAddress DNS(8, 8, 8, 8);
 char temp_string_a[7];
 char temp_string_b[7];
 char temp_string_c[7];
-//long shortLoop = 100;
-long shortDelay = 100;
+long shortLoop = 100;
+//long shortDelay = 100;
 int lettTodo = 10;
 
 EthernetServer server(80);
-DS18B20MED mytest (shortDelay, lettTodo);
+DS18B20MED mytest (shortLoop, lettTodo);
 
 void setup() {
   // Set up the data pins for communication with DS18B20 sensors
