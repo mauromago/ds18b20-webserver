@@ -1,4 +1,4 @@
 # ds18b20-webserver
-done use ds18b20med
- some problems still present.
- Call.sh and call3s.sh are bash script to put under cron call for read sensor and send i fo to a server.
+don't use ds18b20med/n
+some problems still present.\n
+Call.sh and call3s.sh are bash script to put under cron call for read sensor and send it to a server.
